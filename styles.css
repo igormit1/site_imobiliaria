@@ -1,0 +1,250 @@
+/* ---------------------------------- GERAL ----------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#f9f9f9;
+}
+
+section {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    border-bottom: 1px solid black; 
+}
+
+h1 {
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 30px;
+}
+
+h3{
+    color: #333;
+    font-size: 23px;
+}
+
+/* ---------------------------------- HEADER ----------------------------------------------------------- */
+
+header {
+    background-color: #333;
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 130px; 
+    height: auto;
+}
+
+.button-primary {
+    margin: 40px;
+    padding: 20px;
+    background-color: #fcb900;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px;
+
+}
+
+.button-primary:hover {
+    background-color: #ffd344; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    margin-left: auto; 
+}
+
+/* ---------------------------------- SOBRE ----------------------------------------------------------- */
+
+.small-imagemm {
+    width: 28%;
+    height: auto;
+    max-width: 532px;
+    margin-left: auto; 
+    margin-right: 100; 
+    display: block; 
+    margin-bottom: 15px;
+    border-left: 1px solid black;
+}
+
+.pppp {
+    clear: both;
+    margin-left: 20px; 
+    font-size: 20px;
+}
+
+#sobre {
+    display: flex;
+}
+
+/* -------------------------------------- EMPREENDIMENTOS------------------------------------------------------- */
+
+.small-image {
+    width: 50%; 
+    height: auto; 
+    max-width: 450px; 
+    display: block; 
+    margin: 0; 
+}
+
+.ppp {
+    margin-left: 100px; 
+    float: left; 
+    font-size: 20px;
+}
+
+.ppp {
+    margin-left: 20px; 
+    font-size: 20px;
+    clear: both;
+}
+
+.button-secondary {
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(136, 56, 56);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.button-secondary:hover {
+    background-color: rgb(145, 36, 36); 
+}
+
+.container {
+    display: flex;
+    align-items: center; 
+    border-bottom: 1px solid black;
+}
+
+/* ---------------------------------- FOOTER ----------------------------------------------------------- */
+
+#contato {
+    display: flex;
+    background-color: #d4bd9e; 
+    padding: 20px;
+  }
+
+.small-imagem {
+    width: 50%;
+    height: auto;
+    max-width: 532px;
+    margin-left: auto; /* Alterado para 0 para alinhar à esquerda */
+    margin-right: auto; /* Alterado para auto para alinhar à direita */
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* --------------------------------------- MEDIA QUERY ------------------------------------------------------- */
+
+@media (max-width: 1400px){
+
+    #sobre {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto;
+        margin-right: auto; 
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;   
+    }
+
+    .pppp {
+        clear: both;
+        margin-left: 20px; 
+        font-size: 20px;
+    }}
+
+@media (max-width: 800px){
+
+    .button-primary {
+        display: none;
+      }
+
+      .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto;
+        margin-right: auto; 
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+    }
+
+    .small-image {
+        width: 90%; 
+        height: auto; 
+        max-width: 450px; 
+        display: block;
+        margin: 0; 
+    }
+
+    .container {
+        display: flex; 
+        align-items: center; 
+        border-bottom: 1px solid black;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+
+    nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+    }}
+
+@media (max-width: 400px){
+
+    .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+        }}
